@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student registration form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h1>But what to do</h1>
+          <form action="">
+            <h2><i>Welcome!</i></h2>
+
+            <details>
+              <summary>
+                <small><i>Fields marked with * are obligatory</i></small>
+              </summary>
+              <p>Form will not be submitted if some * info is omitted</p>
+            </details>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                  aria-label="First name"
+                />
+              </div>
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                  aria-label="Last name"
+                />
+              </div>
+            </div>
+            <p>Choose your sex:</p>
+            <input type="radio" id="male-sex" value="Male" />
+            Male</label><input type="radio" id="female-sex" value="Female" />
+            Female</label>
+            <div class="row">
+              <div class="col">
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="Birth date"
+                  aria-label="Birth date"
+                />
+              </div>
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-label="Email"
+                />
+              </div>
+              <div class="col-6">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                  aria-label="Password"
+                />
+              </div>
+              <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="City"
+                  aria-label="City"
+                />
+              </div>
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Address"
+                  aria-label="Address"
+                />
+              </div>
+              <div class="mb-3">
+  <label for="formFile" class="form-label">Extra info</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+<div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        I want to get news to my email
+      </label>
+    </div>
+               <button type="submit">Submit</button>
+            </div>
+           
+          </form>
+        </div>
+        <div class="col-6">
+          <h1>I am tired</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
