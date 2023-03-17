@@ -23,18 +23,16 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h1>But what to do</h1>
+          <h2><i>Welcome!</i></h2>
+          <details>
+            <summary>
+              <small><i>Fields marked with * are obligatory</i></small>
+            </summary>
+            <p>Form will not be submitted if some * info is omitted</p>
+          </details>
           <form action="">
-            <h2><i>Welcome!</i></h2>
-            <details>
-              <summary>
-                <small><i>Fields marked with * are obligatory</i></small>
-              </summary>
-              <p>Form will not be submitted if some * info is omitted</p>
-            </details>
-            </div>
-            <div class="row">
-              <div class="col-6">
+            <div class="row row-cols-2">
+              <div class="col">
                 <input
                   type="text"
                   class="form-control"
@@ -42,7 +40,7 @@
                   aria-label="First name"
                 />
               </div>
-              <div class="col-6">
+              <div class="col">
                 <input
                   type="text"
                   class="form-control"
@@ -50,72 +48,75 @@
                   aria-label="Last name"
                 />
               </div>
-            </div>
-            <p>Choose your sex:</p>
+              </div>                          
+              <div class="row row-cols-4">
+                <p>Your sex:</p>
+                <div class="col">
             <input type="radio" id="male-sex" value="Male" />
-            Male</label><input type="radio" id="female-sex" value="Female" />
-            Female</label>
-            <div class="row">
-              <div class="col">
-                <input
+            Male</label>
+            <input type="radio" id="female-sex" value="Female" />
+            Female</label></div>
+            <div class="col-6">
+            <input
                   type="date"
                   class="form-control"
                   placeholder="Birth date"
                   aria-label="Birth date"
                 />
-              </div>
-            <div class="row">
-              <div class="col-6">
-                <input
+                    </div>
+           </div>
+            <div class="row row-cols-2">
+              <div class="col">
+<input
                   type="email"
                   class="form-control"
                   placeholder="Email"
                   aria-label="Email"
                 />
-              </div>
-              <div class="col-6">
-                <input
+</div>
+<div class="col">
+  <input
                   type="password"
                   class="form-control"
                   placeholder="Password"
                   aria-label="Password"
                 />
-              </div>
-              <div class="row">
-              <div class="col-6">
+                </div>
+                </div>
+<div class="row row-cols-2">
+              <div class="col">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="City"
                   aria-label="City"
                 />
-              </div>
-              <div class="col-6">
-                <input
+</div>
+<div class="col">
+<input
                   type="text"
                   class="form-control"
                   placeholder="Address"
                   aria-label="Address"
                 />
-              </div>
-              <div class="mb-3">
+</div>
+</div>
+<div class="mb-3">
   <label for="formFile" class="form-label">Extra info</label>
   <input class="form-control" type="file" id="formFile">
 </div>
+
 <div class="form-check">
       <input class="form-check-input" type="checkbox" id="gridCheck">
       <label class="form-check-label" for="gridCheck">
         I want to get news to my email
       </label>
     </div>
-               <button type="submit">Submit</button>
-            </div>
-           
-          </form>
-        </div>
-        <div class="col-6">
-          <h1>I am tired</h1>
-        </div>
+    <button type="submit">Submit</button>
+
+            
+</form>
+        <div class="col-6">I am tired</div>
       </div>
     </div>
   </body>
