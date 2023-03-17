@@ -6,35 +6,6 @@ body {
   background: url("https://images.unsplash.com/photo-1617529497832-5ad49d9b5928?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
 }
 
-.form-control {
-  margin: 5px;
-  height: 40px;
-  width: 360px;
-}
-.progress {
-  margin: 20px auto;
-  padding: 5px;
-  width: 100%;
-  border: 3px solid #05e3e3;
-  height: 30px;
-}
-
-.progress .progress__bar {
-  height: 100%;
-  width: 0%;
-  background-color: #04b9b9;
-  animation: fill-bar 3s infinite;
-}
-
-@keyframes fill-bar {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 .input-group {
   margin: 10px;
 }
