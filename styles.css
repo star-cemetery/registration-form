@@ -5,3 +5,17 @@
 body {
   background: url("https://images.unsplash.com/photo-1617529497832-5ad49d9b5928?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
 }
+.info-type-box {
+  background-color: rgb(22, 189, 240);
+  width: 150px;
+  height: 50px;
+  border: 5px solid rgb(10, 247, 10);
+  padding: 5px;
+  margin: 20px;
+}
+
+.submit-button {
+  border-radius: 2px;
+  border-color: grey;
+  background-color: linear-gradient(to bottom right, red, yellow, lime, blue);
+}

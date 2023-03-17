@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container px-4">
       <div class="row">
         <div class="col-6">
           <h2><i>Welcome!</i></h2>
@@ -31,7 +31,9 @@
             <p>Form will not be submitted if some * info is omitted</p>
           </details>
           <form action="">
-            <div class="row row-cols-2">
+            <div id="info-type-box"><p>Basic info</p></div>
+            <label for="">Student's name</label>
+            <div class="row row-cols-2 g-2">
               <div class="col">
                 <input
                   type="text"
@@ -49,7 +51,7 @@
                 />
               </div>
               </div>                          
-              <div class="row row-cols-4">
+              <div class="row row-cols-4 g-2">
                 <p>Your sex:</p>
                 <div class="col">
             <input type="radio" id="male-sex" value="Male" />
@@ -65,7 +67,8 @@
                 />
                     </div>
            </div>
-            <div class="row row-cols-2">
+           <label for="">Contact data</label>
+            <div class="row row-cols-2 g-2">
               <div class="col">
 <input
                   type="email"
@@ -83,7 +86,15 @@
                 />
                 </div>
                 </div>
-<div class="row row-cols-2">
+<div class="row row-cols-3">
+  <div class="col">
+<input
+                  type="text"
+                  class="form-control"
+                  placeholder="Address"
+                  aria-label="Address"
+                />
+</div>
               <div class="col">
                 <input
                   type="text"
@@ -93,14 +104,59 @@
                 />
 </div>
 <div class="col">
-<input
+                <input
                   type="text"
                   class="form-control"
-                  placeholder="Address"
-                  aria-label="Address"
+                  placeholder="ZIP Code"
+                  aria-label="ZIP Code"
                 />
 </div>
 </div>
+<label for="">Person to contact in case of emergency</label>
+<div class="row row-cols-2">
+              <div class="col">
+<input
+                  type="text"
+                  class="form-control"
+                  placeholder="Emergency contact"
+                  aria-label="Emergency contact"
+                />
+</div>
+<div class="col">
+  <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Relationship"
+                  aria-label="Relationship"
+                />
+                </div>
+                </div>
+
+<div class="row row-cols-2">
+              <div class="col">
+<input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Emergency phone"
+                  aria-label="Emergency phone"
+                />
+</div>
+<div class="col">
+  <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Emergency e-mail"
+                  aria-label="Emergency e-mail"
+                />
+                </div>
+                </div>
+<div id="info-type-box"><p>Academic info</p></div>
+<label for="">Higher institution name</label>
+<label for=""> Curriculum vitae or list of achievements</label>
+<input class="form-control" type="file" id="formFile">
+<label for="">Other extra curricular activities</label>
+<div id="info-type-box"><p>Other info</p></div>
+
 <div class="mb-3">
   <label for="formFile" class="form-label">Extra info</label>
   <input class="form-control" type="file" id="formFile">
@@ -112,7 +168,8 @@
         I want to get news to my email
       </label>
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" id="submit-button">Submit</button>
+    
 
             
 </form>
