@@ -11,20 +11,60 @@ input {
 ul {
   list-style: none;
 }
-.info-type-box {
-  background-color: rgb(22, 189, 240);
+
+#submit-button,
+#reset-button {
   width: 150px;
   height: 50px;
-  border: 5px solid rgb(10, 247, 10);
+  border: 3px solid rgb(252, 252, 252);
   padding: 5px;
-  margin: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  position: center;
 }
 
-.submit-button {
-  border-radius: 2px;
-  border-color: grey;
-  background-color: linear-gradient(to bottom right, red, yellow, lime, blue);
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#welcome-text:hover,
+#submit-button:hover,
+#reset-button:hover {
+  background-image: linear-gradient(
+    90deg,
+    #e22c87 0%,
+    #ffae00 49%,
+    #bafc4f 80%,
+    #2dd49c 100%
+  );
+  animation: slidebg 5s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position: 100vw;
+  }
+}
+.form-check-input:hover {
+  background-image: linear-gradient(
+    90deg,
+    #e22c87 0%,
+    #ffae00 49%,
+    #bafc4f 80%,
+    #2dd49c 100%
+  );
+}
+
+form-check-label {
+  color: blanchedalmond;
+}
+
+#farewell-message {
+  position: absolute;
+  bottom: 0;
 }
 textarea {
-  border-radius: 10px;
+  border-radius: 5px;
 }

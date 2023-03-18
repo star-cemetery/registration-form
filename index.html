@@ -23,7 +23,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h2><i>Welcome!</i></h2>
+          <h2 id="welcome-text">Welcome!</h2>
           <details>
             <summary>
               <small><i>Fields marked with * are obligatory</i></small>
@@ -182,29 +182,33 @@
     <ul>
 <li>
   <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">100</label>
+      <label class="form-check-label" for="gridCheck">Car/Transportation
+</label>
   </li>
 <li>
    <input class="form-check-input" type="checkbox" id="gridCheck">
-  <label class="form-check-label" for="gridCheck">200</label>
+  <label class="form-check-label" for="gridCheck">Printer
+</label>
 </li>
 <li>
 <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">300</label>
+      <label class="form-check-label" for="gridCheck">Laptop</label>
       </li>
       </div>
               <div class="col">
                 <li>
   <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">100</label>
+      <label class="form-check-label" for="gridCheck" id="lower-half-text">Event Venue
+</label>
   </li>
 <li>
    <input class="form-check-input" type="checkbox" id="gridCheck">
-  <label class="form-check-label" for="gridCheck">200</label>
+  <label class="form-check-label" for="gridCheck">LCD Projector
+</label>
 </li>
 <li>
 <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">300</label>
+      <label class="form-check-label" for="gridCheck">Free time</label>
       </li>
       </ul>
 </div>
@@ -216,10 +220,10 @@
       </div>
       </form>
     <button type="reset" value="Reset" id="reset-button">Clear the form</button> 
-<button type="submit" value="Submit" id="submit-button">Submit</button> 
-</div>
+    <button type="submit" value="Submit" id="submit-button">Submit</button> 
+    </div>
         <div class="col-6">
-          <footer>
+          <footer id="farewell-message">
         <label for="message">Leave us a message</label>
         <textarea id="message" name="message" rows="4" cols="50"></textarea>
         </footer>
