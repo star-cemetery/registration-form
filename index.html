@@ -20,10 +20,12 @@
     />
   </head>
   <body>
+    <div id="scroll-container">
+     <div class="progress-bar" id="scrollprogressbar"></div>
+      </div>
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h2 id="welcome-text">Welcome!</h2>
+       <div class="col">
+         <h2 id="welcome-text">Welcome!</h2>
           <details>
             <summary>
               <small><i>Fields marked with * are obligatory</i></small>
@@ -31,6 +33,8 @@
             <p>Form will not be submitted if some * info is omitted</p>
           </details>
           <form action="">
+            <div class="row row-cols-2">
+              <div class="col">
             <div id="info-type-box"><p>Basic info</p></div>
             <label for="">Student's name</label>
             <div class="row row-cols-3">
@@ -229,5 +233,6 @@
         </footer>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

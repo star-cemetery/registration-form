@@ -5,6 +5,27 @@
 body {
   background: url("https://images.unsplash.com/photo-1617529497832-5ad49d9b5928?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
 }
+
+#scroll-container {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 10px;
+  background: #fcfbfb;
+}
+#scrollprogressbar {
+  height: 7px;
+  background: linear-gradient(
+    90deg,
+    #e22c87 0%,
+    #ffae00 49%,
+    #bafc4f 80%,
+    #2dd49c 100%
+  );
+  width: 0%;
+}
+
 input {
   color: aquamarine;
 }
