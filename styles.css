@@ -26,11 +26,30 @@ body {
   width: 0%;
 }
 
-input {
-  color: aquamarine;
-}
 ul {
   list-style: none;
+}
+#info-type-box {
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  border: 3px solid #fcfbfb;
+  border-radius: 4px;
+  padding: 3px;
+  margin: 5px;
+}
+
+#info-type-box:hover {
+  background: linear-gradient(
+    90deg,
+    #e22c87 0%,
+    #ffae00 49%,
+    #bafc4f 80%,
+    #2dd49c 100%
+  );
+}
+#lower-page-text {
+  color: #fcfbfb;
 }
 
 #submit-button,

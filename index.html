@@ -40,9 +40,9 @@
             <div class="row row-cols-3">
               <div class="col">
                 <input
-                  type="text"
+                  type="text" minlength="2" required
                   class="form-control"
-                  placeholder="First name"
+                  placeholder="First name*"
                   aria-label="First name"
                 />
               </div>
@@ -56,18 +56,18 @@
               </div>
               <div class="col">
                 <input
-                  type="text"
+                  type="text" minlength="2" required
                   class="form-control"
-                  placeholder="Last name"
+                  placeholder="Last name*"
                   aria-label="Last name"
                 />
               </div>
               </div>                          
               <div class="row row-cols-4">
-                <p>Your sex:</p>
+                <p>Your sex*:</p>
                 <div class="col">
                   <form action="/form/submit" method="get"></form>
-            <input type="radio" id="male-sex" value="Male" checked="checked"/>
+            <input type="radio" id="male-sex" value="Male" checked="checked" required/>
             Male</label>
             <input type="radio" id="female-sex" value="Female"  />
             Female</label></div>
@@ -81,46 +81,55 @@
                     </div>
            </div>
            <label for="">Contact data</label>
-            <div class="row row-cols-2">
+            <div class="row row-cols-3">
               <div class="col">
 <input
-                  type="email"
+                  type="email" required
                   class="form-control"
-                  placeholder="Email"
+                  placeholder="Email*"
                   aria-label="Email"
                 />
 </div>
 <div class="col">
   <input
-                  type="password"
+                  type="password" minlength="8" required
                   class="form-control"
-                  placeholder="Password"
+                  placeholder="Password*"
                   aria-label="Password"
                 />
                 </div>
+                <div class="col">
+<input
+                  type="tel" required
+                  class="form-control"
+                  placeholder="Phone number*"
+                   pattern="+[0-9]{2} ([0-9]{3}) [0-9]{2}-[0-9]{2}-[0-9]{3}"
+                   aria-label="Phone number"
+                />
+</div>
                 </div>
 <div class="row row-cols-3">
   <div class="col">
 <input
-                  type="text"
+                  type="text" required
                   class="form-control"
-                  placeholder="Address"
+                  placeholder="Address*"
                   aria-label="Address"
                 />
 </div>
               <div class="col">
                 <input
-                  type="text"
+                  type="text" required
                   class="form-control"
-                  placeholder="City"
+                  placeholder="City*"
                   aria-label="City"
                 />
 </div>
 <div class="col">
                 <input
-                  type="text" minlength="5" maxlength="6"
+                  type= "text" minlength="5" maxlength="6" required
                   class="form-control"
-                  placeholder="Post code"
+                  placeholder="Post code*"
                   aria-label="Post code"
                 />
 </div>
@@ -129,18 +138,25 @@
 <div class="row row-cols-2">
               <div class="col">
 <input
-                  type="tel"
+                  type="tel" required
                   class="form-control"
-                  placeholder="Emergency contact"
+                  placeholder="Emergency contact*"
                   aria-label="Emergency contact"
                 />
 </div>
 <div class="col">
-  <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Relationship"
-                  aria-label="Relationship"
+  <input list="relationship" name="relation"  class="form-control"
+  placeholder="Relationship"
+  aria-label="Relationship">
+  <datalist id="relationship">
+    <option value="Father">
+    <option value="Mother">
+    <option value="Close friend">
+    <option value="Distant friend">
+    <option value="Acquintance">
+    <option value="Other">
+  </datalist>
+                 
                 />
                 </div>
                 </div>
@@ -148,25 +164,27 @@
 <div class="row row-cols-2">
               <div class="col">
 <input
-                  type="tel"
+                  type="tel" required
                   class="form-control"
-                  placeholder="Emergency phone"
+                  placeholder="Emergency phone*" 
+                  pattern="+[0-9]{2} ([0-9]{3}) [0-9]{2}-[0-9]{2}-[0-9]{3}"
                   aria-label="Emergency phone"
                 />
 </div>
 <div class="col">
   <input
-                  type="email"
+                  type="email" required
                   class="form-control"
-                  placeholder="Emergency e-mail"
+                  placeholder="Emergency e-mail*"
                   aria-label="Emergency e-mail"
                 />
                 </div>
                 </div>
-<div id="info-type-box"><p>Academic info</p></div>
+                
+<div id="info-type-box"><p id="lower-page-text">Academic info</p></div>
 <div class="row row-cols-2">
               <div class="col">
-<label for="">Higher institution name</label>
+<label for="" id="lower-page-text">Higher institution name</label>
 <input
                   type="text"
                   class="form-control"
@@ -175,52 +193,53 @@
                 />
                 </div>
                  <div class="col">
-<label for=""> Curriculum vitae or list of achievements</label>
+<label for="" id="lower-page-text"> CV/list of achievements</label>
 <input class="form-control" type="file" id="formFile">
 </div>
 </div>
-<div id="info-type-box"><p>Other info</p></div>
-<label for=""> Resources available</label>
+
+<div id="info-type-box"><p id="lower-page-text">Other info</p></div>
+<label for="" id="lower-page-text"> Resources available</label>
 <div class="row row-cols-2">
   <div class="col">
     <ul>
 <li>
   <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">Car/Transportation
+      <label class="form-check-label" for="gridCheck" id="lower-page-text">Car/Transportation
 </label>
   </li>
 <li>
    <input class="form-check-input" type="checkbox" id="gridCheck">
-  <label class="form-check-label" for="gridCheck">Printer
+  <label class="form-check-label" for="gridCheck" id="lower-page-text">Printer
 </label>
 </li>
 <li>
 <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">Laptop</label>
+      <label class="form-check-label" for="gridCheck" id="lower-page-text">Laptop</label>
       </li>
       </div>
               <div class="col">
                 <li>
   <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck" id="lower-half-text">Event Venue
+      <label class="form-check-label" for="gridCheck" id="lower-page-text">Event Venue
 </label>
   </li>
 <li>
    <input class="form-check-input" type="checkbox" id="gridCheck">
-  <label class="form-check-label" for="gridCheck">LCD Projector
+  <label class="form-check-label" for="gridCheck" id="lower-page-text" >LCD Projector
 </label>
 </li>
 <li>
 <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">Free time</label>
+      <label class="form-check-label" for="gridCheck" id="lower-page-text">Free time</label>
       </li>
       </ul>
 </div>
 </div>
 <div class="form-check">
-            <label class="form-check-label" for="gridCheck">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-        I want to get news to my email</label>
+  <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck" id="lower-page-text">
+          I want to get news to my email</label>
       </div>
       </form>
     <button type="reset" value="Reset" id="reset-button">Clear the form</button> 
