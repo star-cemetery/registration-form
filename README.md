@@ -10,10 +10,13 @@ Project specification:
 - scroll indicator;
 
 What understood: how to make 
-Only half of the page filled in via Bootstrap grid; 2-3 inputs in a row, input types [text, checkbox, radio, email, list, date, password, submit], input attributes [min/maxlength, required], checkboxes and radio buttons; hover effect on buttons, imported other's scroll bar's html, css and js.
+- Only half of the page filled in via Bootstrap grid; 
+- 2-3 inputs in a row; 
+- input types [text, checkbox, radio, email, list, date, password, submit], input attributes [min/maxlength, required], checkboxes and radio buttons; 
+- hover effect on buttons, imported other's scroll bar's html, css and js.
 
 What failed to understand:
-how to locate textarea at the bottom of the free right column;
-how to delete info if Reset button is clicked;
+- how to locate textarea at the bottom of the free right column;
+- how to delete info if Reset button is clicked;
 
 source of student form inspiration: https://www.jotform.com/form-templates/student-registration-form
