@@ -4,6 +4,8 @@
 }
 body {
   background: url("https://images.unsplash.com/photo-1617529497832-5ad49d9b5928?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-repeat: no-repeat;
+  display: flex;
 }
 
 #scroll-container {
@@ -33,10 +35,10 @@ ul {
   text-align: center;
   width: 100px;
   height: 50px;
-  border: 3px solid #fcfbfb;
-  border-radius: 4px;
-  padding: 3px;
-  margin: 5px;
+  border: 2px solid #fcfbfb;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
 }
 
 #info-type-box:hover {

@@ -20,26 +20,27 @@
     />
   </head>
   <body>
+    <div class="container-fluid">
     <div id="scroll-container">
      <div class="progress-bar" id="scrollprogressbar"></div>
       </div>
-    <div class="container">
-       <div class="col">
-         <h2 id="welcome-text">Welcome!</h2>
+    <div class="row d-flex">
+       <div class="col-md-6">
+         <h2 id="welcome-text">Welcome</h2>
           <details>
             <summary>
               <small><i>Fields marked with * are obligatory</i></small>
             </summary>
             <p>Form will not be submitted if some * info is omitted</p>
           </details>
-          <form action="">
-            <div class="row row-cols-2">
+            <div class="row flex">
               <div class="col">
             <div id="info-type-box"><p>Basic info</p></div>
             <label for="">Student's name</label>
             <div class="row row-cols-3">
               <div class="col">
-                <input
+                <form action="">
+                <input 
                   type="text" minlength="2" required
                   class="form-control"
                   placeholder="First name*"
@@ -48,14 +49,14 @@
               </div>
               <div class="col">
                 <input
-                  type="text"
+                  type="text" 
                   class="form-control"
                   placeholder="Middle name"
                   aria-label="Middle name"
                 />
               </div>
               <div class="col">
-                <input
+                <input 
                   type="text" minlength="2" required
                   class="form-control"
                   placeholder="Last name*"
@@ -181,7 +182,7 @@
                 </div>
                 </div>
                 
-<div id="info-type-box"><p id="lower-page-text">Academic info</p></div>
+<div id="info-type-box"><p id="lower-page-text">Acad. info</p></div>
 <div class="row row-cols-2">
               <div class="col">
 <label for="" id="lower-page-text">Higher institution name</label>
@@ -205,7 +206,7 @@
     <ul>
 <li>
   <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck" id="lower-page-text">Car/Transportation
+      <label class="form-check-label" for="gridCheck" id="lower-page-text">Transportation
 </label>
   </li>
 <li>
@@ -236,22 +237,24 @@
       </ul>
 </div>
 </div>
+<div class="row row-cols-3">
+  <div class="col-4">
 <div class="form-check">
   <input class="form-check-input" type="checkbox" id="gridCheck">
             <label class="form-check-label" for="gridCheck" id="lower-page-text">
-          I want to get news to my email</label>
+          Send me your news</label>
       </div>
       </form>
+      </div>
+      <div class="col-4">
     <button type="reset" value="Reset" id="reset-button">Clear the form</button> 
+    </div>
+    <div class="col-4">
     <button type="submit" value="Submit" id="submit-button">Submit</button> 
     </div>
-        <div class="col-6">
-          <footer id="farewell-message">
-        <label for="message">Leave us a message</label>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea>
-        </footer>
-      </div>
+    <div class="col-md-6"></div>
     </div>
-    <script src="script.js"></script>
+    </div>
+        <script src="script.js"></script>
   </body>
 </html>
